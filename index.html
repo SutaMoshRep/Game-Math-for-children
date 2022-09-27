@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Математическая игра для детей</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3965/3965108.png" type="image/x-icon">
+    </head>
+
+    <body>
+  
+        <div class="vanta">
+        <div class="container">   
+        <h1>Математическая игра Умов</h1>
+        <div id="container">
+            <div id="score">
+               Счет: <span id="scorevalue">0</span>
+            </div>
+            <div id="correct">
+                Правильно
+            </div>
+            <div id="wrong">
+                Попробуй еще раз
+            </div>
+            <div id="question">
+
+            </div>
+            <div id="instruction">
+              Ответь правильно на примеры за 30сек
+            </div>
+            <div id="choices">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <div id="box4" class="box"></div>
+            </div>
+            <div id="startreset">
+                Начать
+            </div>
+           
+            <div id="timeremaining">
+                Оставшиеся время :
+                <span id="timeremainingvalue">30</span>
+              сек
+            </div>
+            <div id="gameOver">
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- script -->
+        <script type="text/javascript" src="js/script.js">
+            VANTA.GLOBE({
+  el: "vanta",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3fff6c,
+  color2: 0xf70202,
+  backgroundColor: 0x141414
+})
+        </script>
+        <script src="./js/three.r134.min.js"></script>
+        <script src="./js/vanta.globe.min.js"></script>
+    </body>
+
+</html>
